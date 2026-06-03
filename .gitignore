@@ -1,0 +1,23 @@
+﻿# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# VS
+.vs/
+
+# VS Code
+.vscode/
+
+# Database
+*.sqlite
+*.db
+
+# Build
+*.exe
+*.dll
+*.pdb
