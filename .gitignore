@@ -1,0 +1,11 @@
+﻿# 编译输出
+out/
+*.class
+
+# IDE
+.vs/
+.idea/workspace.xml
+
+# 系统
+Thumbs.db
+Desktop.ini
