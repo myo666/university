@@ -1,11 +1,30 @@
-﻿# 编译输出
+﻿# Java
 out/
 *.class
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
 
 # IDE
 .vs/
 .idea/workspace.xml
+.vscode/
 
-# 系统
+# Database
+*.sqlite
+*.db
+
+# Build
+*.exe
+*.dll
+*.pdb
+
+# System
 Thumbs.db
 Desktop.ini
