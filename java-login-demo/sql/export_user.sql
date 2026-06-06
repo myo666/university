@@ -1,5 +1,5 @@
 -- 数据库导出: LoginDB
--- 导出时间: Sat Jun 06 12:52:52 CST 2026
+-- 导出时间: Sat Jun 06 13:12:50 CST 2026
 
 -- 删除已存在的表
 IF OBJECT_ID('[user]', 'U') IS NOT NULL DROP TABLE [user];
