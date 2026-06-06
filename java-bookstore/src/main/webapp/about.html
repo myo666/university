@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 知阅书城</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero { background: linear-gradient(135deg, #2c3e50, #3498db); color: #fff; padding: 48px 24px; text-align: center; margin-bottom: 24px; }
+        .about-hero h1 { font-size: 28px; margin-bottom: 8px; }
+        .about-hero p { font-size: 15px; opacity: .85; }
+        .about-content { max-width: 800px; margin: 0 auto; padding: 0 24px 40px; }
+        .about-content h2 { font-size: 20px; color: #2c3e50; margin: 28px 0 12px; border-left: 3px solid #3498db; padding-left: 12px; }
+        .about-content p { color: #555; line-height: 1.8; margin-bottom: 12px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 20px 0; }
+        .feature-item { background: #fff; border-radius: 6px; padding: 20px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+        .feature-item .icon { font-size: 36px; margin-bottom: 10px; }
+        .feature-item h3 { font-size: 15px; color: #333; margin-bottom: 6px; }
+        .feature-item p { font-size: 13px; color: #888; }
+        .contact-form { background: #fff; border-radius: 6px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,.08); margin-top: 20px; }
+        .contact-form label { display: block; font-size: 13px; color: #555; font-weight: 600; margin-bottom: 6px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 9px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; margin-bottom: 14px; font-family: inherit; }
+        .contact-form input:focus, .contact-form textarea:focus { border-color: #3498db; outline: none; }
+        .contact-form textarea { resize: vertical; min-height: 100px; }
+        .contact-form button { padding: 10px 32px; background: #3498db; color: #fff; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; }
+        .contact-form button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <!-- 超链接导航栏 -->
+    <header class="header">
+        <a href="index.jsp" class="logo">知阅<span>书城</span></a>
+        <nav>
+            <a href="index.jsp">首页</a>
+            <a href="book/list">全部图书</a>
+            <a href="user/login">登录</a>
+            <a href="user/register">注册</a>
+        </nav>
+    </header>
+
+    <!-- 图片：品牌横幅 -->
+    <section class="about-hero">
+        <img src="images/cover_1.png" alt="知阅书城" style="width:120px;height:168px;border-radius:4px;margin-bottom:16px;box-shadow:0 4px 12px rgba(0,0,0,.3);">
+        <h1>关于知阅书城</h1>
+        <p>发现好书，遇见更好的自己</p>
+    </section>
+
+    <div class="about-content">
+        <h2>我们是谁</h2>
+        <p>知阅书城成立于2026年，是一家专注于为读者提供优质阅读体验的在线书店。我们精心挑选文学、科技、历史、哲学、经济等领域的经典与前沿著作，致力于让每一本书找到它的读者。</p>
+
+        <h2>核心特色</h2>
+        <!-- 超链接：跳转到各分类 -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="icon">📚</div>
+                <h3><a href="book/list?category=文学" style="color:#2c3e50;text-decoration:none;">文学经典</a></h3>
+                <p>古今中外文学名著</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">💻</div>
+                <h3><a href="book/list?category=科技" style="color:#2c3e50;text-decoration:none;">科技前沿</a></h3>
+                <p>编程、AI与数字技术</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">📜</div>
+                <h3><a href="book/list?category=历史" style="color:#2c3e50;text-decoration:none;">历史纵横</a></h3>
+                <p>以史为鉴可知兴替</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">💡</div>
+                <h3><a href="book/list?category=哲学" style="color:#2c3e50;text-decoration:none;">哲学思辨</a></h3>
+                <p>探寻智慧的本源</p>
+            </div>
+        </div>
+
+        <h2>联系我们</h2>
+        <!-- 表单 -->
+        <div class="contact-form">
+            <form action="#" method="post" onsubmit="alert('感谢留言！（此为静态演示页，消息不会实际发送）'); return false;">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+
+                <label for="email">邮箱</label>
+                <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+
+                <label for="message">留言</label>
+                <textarea id="message" name="message" placeholder="请输入您想说的话..." required></textarea>
+
+                <button type="submit">提交留言</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>© 2026 知阅书城 | 静态页面演示</p>
+    </div>
+</body>
+</html>

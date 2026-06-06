@@ -1,0 +1,12 @@
+UPDATE books SET cover = 'images/cover_1.png'  WHERE id = 1;
+UPDATE books SET cover = 'images/cover_2.png'  WHERE id = 2;
+UPDATE books SET cover = 'images/cover_3.png'  WHERE id = 3;
+UPDATE books SET cover = 'images/cover_4.png'  WHERE id = 4;
+UPDATE books SET cover = 'images/cover_5.png'  WHERE id = 5;
+UPDATE books SET cover = 'images/cover_6.png'  WHERE id = 6;
+UPDATE books SET cover = 'images/cover_7.png'  WHERE id = 7;
+UPDATE books SET cover = 'images/cover_8.png'  WHERE id = 8;
+UPDATE books SET cover = 'images/cover_9.png'  WHERE id = 9;
+UPDATE books SET cover = 'images/cover_10.png' WHERE id = 10;
+UPDATE books SET cover = 'images/cover_11.png' WHERE id = 11;
+UPDATE books SET cover = 'images/cover_12.png' WHERE id = 12;
